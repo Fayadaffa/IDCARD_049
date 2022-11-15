@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ID Card</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <style>
+            body{
+                width: 500px;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(0, -50%);
+                margin-left: -250px;
+                border: 2px solid black;
+            }
+            table{
+                width: 500px;
+            }
+            .left-div{
+                margin-left: 90px;
+                width: 100px;
+                display: inline-block;
+            }
+            .right-div{
+                margin-left: 35px;
+                display: inline-block;
+            }
+            .bt-div{
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <table style="fit-auto">
+            <tr>
+                <td>
+            <center><h1>ID Card</h1></center>
+            <hr/>
+            <form method="post" action="/myPage" enctype="multipart/form-data">
+                <br>
+                <div>
+                   <div class="left-div">
+                        NIK
+                   </div>
+                    <div class="right-div">
+                        <input type="text" name="varNIK" required="" />
+                   </div>
+                </div>
+                <br/><br/>
+                <div>
+                   <div class="left-div">
+                        Nama
+                   </div>
+                   <div class="right-div">
+                        <input type="text" name="varNama" required=""/>
+                   </div>
+                </div>
+                <br/><br/>
+                 <div>
+                   <div class="left-div">
+                        Tanggal Lahir
+                   </div>
+                   <div class="right-div">
+                        <input type="date" name="varDate" required=""/>
+                   </div>
+                </div>
+                <br/><br/>
+                 <div>
+                   <div class="left-div">
+                        Jenis Kelamin
+                   </div>
+                   <div class="right-div">
+                       <select name="varJK" id="JK">
+                            <option value="Laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                       </select>    
+                   </div>
+                </div>
+                <br/><br/>
+                   <div>
+                   <div class="left-div">
+                        Agama
+                   </div>
+                   <div class="right-div">
+                       <select name="varAgama" id="Agama">
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Hindu">Hindu</option>
+                       </select>  
+                   </div>
+                </div>
+                <br/><br/>
+                <div>
+                   <div class="left-div">
+                        Pekerjaan
+                   </div>
+                   <div class="right-div">
+                        <input type="text" name="varJob" required=""/>
+                   </div>
+                </div>
+                <br/><br/>
+                 <div>
+                   <div class="left-div">
+                        Foto
+                   </div>
+                   <div class="right-div">
+                        <input type="file" accept="image/jpeg, image/png" name="varImage" required=""/>
+                   </div>
+                </div>
+                <br/><br/>
+                <center><input type="submit" value="KIRIM" /></center>
+                <br/>
+            </form>
+        </td>
+    </tr>
+</table>
+    </body>
+</html>
